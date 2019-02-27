@@ -1,0 +1,73 @@
+$blue:#007bff;
+$white:#ffffff;
+$black:#000000;
+$light-gray:#484848;
+
+#accordion .panel{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: -5px;
+}
+#accordion .panel-heading{
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+#accordion .panel-title a{
+    display: block;
+    padding: 15px 70px 15px 5px;
+   
+
+letter-spacing: 1px;
+color:$white;
+border-bottom: 1px solid $light-gray;
+position: relative;
+font-size: 14px;
+font-weight: 500;
+}
+#accordion .title a.collapsed{ color:$white; }
+#accordion .title a.collapsed:hover{ color:$white; }
+#accordion .title a:before,
+#accordion .title a:after{
+content: "";
+width: 3px;
+height: 10px;
+background:$blue;
+font-size: 15px;
+position: absolute;
+top: 20px;
+right: 35px;
+transform: rotate(-45deg);
+transition: all 0.3s ease-in-out 0s;
+}
+#accordion .title a:after{
+right: 29px;
+transform: rotate(45deg);
+}
+#accordion .title a.collapsed:before{
+transform: rotate(45deg);
+background:$white;
+}
+#accordion .title a.collapsed:after{
+transform: rotate(-45deg);
+background:$white;
+}
+#accordion .title a.collapsed:hover:before,
+#accordion .title a.collapsed:hover:after{ background:$blue; }
+#accordion .panel-body{
+padding: 10px 10px;
+background:$blue;
+border-top: none;
+font-size: 15px;
+color:$white;
+line-height: 25px;
+}
+
+.fixed_top{
+    margin-top: 56px;
+}
+.height-row{height: 100%;}
+.bg-blue{background-color:$blue;}
+.bg-black{background-color:$black;}
+.navbar-light .navbar-nav .nav-link{color: $white;}

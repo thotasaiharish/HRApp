@@ -1,20 +1,211 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-blue fixed-top">
+  <a class="navbar-brand col-md-3" href="#"><b>HR-APP</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="form-inline my-2 my-lg-0 mr-auto">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+<div class="container-fluid">
+<div class="fixed_top">
+<div class="row">
+  <div class="col-md-3 col-sm-12 position-fixed bg-black height-row">
+      <div class="container">
+          <div class="row">
+            <div class="panel-group col-md-12" id="accordion">
+                 <div class="panel panel-default">
+                    <div class="panel-heading">
+                       <h4 class="panel-title ">
+                          <a  href="index.php">
+                          Home
+                          </a>
+                       </h4>
+                    </div>
+                 </div>
+                 <div class="panel panel-default">
+                    <div class="panel-heading">
+                       <h4 class="panel-title ">
+                          <a  href="aboutus.php">
+                          About Us
+                          </a>
+                       </h4>
+                    </div>
+                 </div>
+                 <div class="panel panel-default">
+                    <div class="panel-heading">
+                       <h4 class="panel-title title">
+                          <a class=" collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false">
+                          Products
+                          </a>
+                       </h4>
+                    </div>
+                    <!--/.panel-heading -->
+                    <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="true" style="">
+                       <div class="panel-body">
+                          <!-- nested -->
+                          <div class="panel-group" id="nested">
+                             <div class="panel panel-default">
+                                <div class="panel-heading">
+                                   <h4 class="panel-title title">
+                                      <a class="collapsed" data-toggle="collapse" data-parent="#nested" href="#nested-collapseOne">
+                                      Mars
+                                      </a>
+                                   </h4>
+                                </div>
+                                <!--/.panel-heading -->
+                                <div id="nested-collapseOne" class="panel-collapse collapse">
+                                   <div class="panel-body nested-menu">
+                                      <li><a href="mars-toilet.php">Mars Toilet</a></li>
+                                      <li><a href="mars-urinal.php">Mars Urinal</a></li>
+                                      <li><a href="mars-shower.php">Mars Shower</a></li>
+                                   </div>
+                                   <!--/.panel-body -->
+                                </div>
+                                <!--/.panel-collapse --> 
+                             </div>
+                             <!-- /.panel --> 
+                             <div class="panel panel-default">
+                                <div class="panel-heading">
+                                   <h4 class="panel-title title">
+                                      <a class="collapsed" data-toggle="collapse" data-parent="#nested" href="#nested-collapseTwo">
+                                      Naptune
+                                      </a>
+                                   </h4>
+                                </div>
+                                <!--/.panel-heading -->
+                                <div id="nested-collapseTwo" class="panel-collapse collapse">
+                                   <div class="panel-body nested-menu">
+                                     <li><a href="neptune-toilet.php">Naptune Toilet</a></li>
+                                      <li><a href="neptune-urinal.php">Naptune Urinal</a></li>
+                                      <li><a href="neptune-shower.php">Naptune Shower</a></li>
+                                   </div>
+                                   <!--/.panel-body -->
+                                </div>
+                                <!--/.panel-collapse -->
+                             </div>
+                             <!-- /.panel -->
+                             <div class="panel panel-default">
+                                <div class="panel-heading">
+                                   <h4 class="panel-title title">
+                                      <a class="collapsed" data-toggle="collapse" data-parent="#nested" href="#nested-collapseThree">
+                                      Saturn
+                                      </a>
+                                   </h4>
+                                </div>
+                                <!--/.panel-heading -->
+                                <div id="nested-collapseThree" class="panel-collapse collapse">
+                                   <div class="panel-body nested-menu">
+                                       <li><a href="saturn-toilet.php">Saturn Toilet</a></li>
+                                      <li><a href="saturn-urinal.php">Saturn Urinal</a></li>
+                                      <li><a href="saturn-shower.php">Saturn Shower</a></li>
+                                   </div>
+                                   <!--/.panel-body -->
+                                </div>
+                                <!--/.panel-collapse -->
+                             </div>
+                             <!-- /.panel -->
+                             <div class="panel panel-default">
+                                <div class="panel-heading">
+                                   <h4 class="panel-title title">
+                                      <a class="collapsed" data-toggle="collapse" data-parent="#nested" href="#nested-collapseFour">
+                                      Jupiter
+                                      </a>
+                                   </h4>
+                                </div>
+                                <!--/.panel-heading -->
+                                <div id="nested-collapseFour" class="panel-collapse collapse">
+                                   <div class="panel-body nested-menu">
+                                       <li><a href="jupiter-toilet.php">Jupiter Toilet</a></li>
+                                      <li><a href="jupiter-urinal.php">Jupiter Urinal</a></li>
+                                      <li><a href="jupiter-shower.php">Jupiter Shower</a></li>
+                                   </div>
+                                   <!--/.panel-body -->
+                                </div>
+                                <!--/.panel-collapse -->
+                             </div>
+                             <!-- /.panel -->
+                          </div>
+                          <!-- /.panel-group -->
+                          <!-- nested -->
+                       </div>
+                       <!--/.panel-body -->
+                    </div>
+                    <!--/.panel-collapse -->
+                 </div>
+                 <!-- /.panel -->
+                 
+                 <div class="panel panel-default">
+                    <div class="panel-heading">
+                       <h4 class="panel-title title">
+                          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#nonveg" aria-expanded="false">
+                          Services
+                          </a>
+                       </h4>
+                    </div>
+                    <!--/.panel-heading -->
+                    <div id="nonveg" class="panel-collapse collapse" aria-expanded="false">
+                       <div class="panel-body nested-menu">
+                          <!-- nested -->
+                           <li><a href="cleaning-services.php">Cleaning Services</a></li>
+                            <li><a href="hand-wash-system.php">Hand Wash System</a></li>
+                                     
+                          <!-- /.panel-group -->
+                          <!-- nested -->
+                       </div>
+                       <!--/.panel-body -->
+                    </div>
+                    <!--/.panel-collapse -->
+                 </div>
+                 <div class="panel panel-default">
+                    <div class="panel-heading">
+                       <h4 class="panel-title ">
+                          <a  href="contactus.php">
+                          Contact Us
+                          </a>
+                       </h4>
+                    </div>
+                 </div>
+                 
+              </div>
+        
+        
+        
+          </div>
+        </div>
+  </div>
+  <div class="col-md-9 offset-md-3 col-sm-12">
+        right
+  </div>
+</div>
+</div>
+</div>
