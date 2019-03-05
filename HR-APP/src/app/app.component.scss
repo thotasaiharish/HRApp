@@ -2,6 +2,7 @@ $blue:#007bff;
 $white:#ffffff;
 $black:#000000;
 $light-gray:#484848;
+$content-gray:#f4f7f6;
 
 #accordion .panel{
     border: none;
@@ -71,3 +72,183 @@ line-height: 25px;
 .bg-blue{background-color:$blue;}
 .bg-black{background-color:$black;}
 .navbar-light .navbar-nav .nav-link{color: $white;}
+.bh_chart small {
+		display: table;
+	}
+.bh_chart {
+	margin-left:15px; 
+	margin-right:15px;
+	display:inline-block;
+}
+.card {
+    border-radius: .55rem;
+    background: #fff;
+    transition: .5s;
+    border: 0;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+}
+.card .top {
+    color: #444;
+    padding: 20px;
+    font-weight: 400;
+}
+.top_counter .icon {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #eee;
+    border-radius: .55rem;
+    margin-right: 10px;
+}
+.top_counter .content {
+    height: 50px;
+}
+.top_counter .icon {
+    line-height: 49px;
+    font-size: 20px;
+    text-align: center;
+}
+.content_full{
+    background-color: $content-gray;
+}
+.stat-item {
+    display: inline-block;
+    padding-right: 15px;
+}
+.stat-item h5{
+    font-size: 13px;
+}
+.stat-item .col-black{
+    font-size: 14px;
+}
+.card .header{
+    color:#444;
+    padding:20px;
+    position:relative;
+    box-shadow:none
+}
+.card .header .header-dropdown{
+    position:absolute;
+    top:14px;
+    right:15px;
+    list-style:none
+}
+.card .header .header-dropdown li{
+    display: inline-block;
+}
+.card .header .header-dropdown .tab_btn{
+    font-size:12px;
+    font-weight:700;
+    background:#eee;
+    color:#777;
+    width:32px;
+    height:32px;
+    line-height:32px;
+    margin: 0 2px;
+}
+.card .header .header-dropdown .tab_btn.active,.card .header .header-dropdown .tab_btn:hover{
+    background:#01b2c6;
+    color:#fff;
+    text-decoration: none;
+}
+.card .header .header-dropdown .dropdown-toggle:after{
+    content:"\f142";
+    font-family:'FontAwesome';
+    border:0;
+    vertical-align:middle;
+    height:auto;
+    width:auto
+}
+.card .header .header-dropdown li a{
+    padding:5px 10px
+}
+.card .header .header-dropdown li .dropdown-menu{
+    border-radius:.55rem;
+    background:#17191c;
+    overflow:hidden;
+    transform:none !important;
+    left:auto !important;
+    right:0;
+    padding:10px;
+    box-shadow:0px 2px 20px 0px rgba(0,0,0,0.5);
+    border:0
+}
+.card .header .header-dropdown li .dropdown-menu li{
+    display:block !important
+}
+.card .header .header-dropdown li .dropdown-menu li a{
+    color:#999;
+    font-size:14px;
+    padding:10px;
+    white-space:nowrap
+}
+.card .header .header-dropdown li .dropdown-menu li a:hover{
+    color:#fff
+}
+.card .header .header-dropdown i{
+    -webkit-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+    -ms-transition:all 0.5s;
+    -o-transition:all 0.5s;
+    transition:all 0.5s;
+    font-size:20px;
+    color:#999
+}
+.card .header h2{
+    font-size:16px;
+    color:#444;
+    position:relative
+}
+.card .header h2 small{
+    font-size:13px;
+    color:#999;
+    line-height:15px
+}
+.card .header h2 small a{
+    font-weight:700;
+    color:#777
+}
+.card .p-15{
+    padding:15px !important
+}
+.todocheckbox {
+    padding-left: 0;
+    list-style: none;
+}
+.todocheckbox li{
+    margin-bottom: 30px;
+}
+.table td{
+    vertical-align:middle;
+
+}
+.badge {
+    padding: 4px 8px;
+    text-transform: uppercase;
+    line-height: 12px;
+    border: 1px solid;
+    font-weight: 400;
+}
+.badge-success {
+    background: transparent;
+    border-color: #22af46;
+    color: #22af46;
+}
+.badge-warning {
+    background: transparent;
+    border-color: #f3ad06;
+    color: #f3ad06;
+}
+.badge-primary {
+    background: transparent;
+    border-color: #01b2c6;
+    color: #01b2c6;
+}
+.badge-danger {
+    background: transparent;
+    border-color: #de4848;
+    color: #de4848;
+}
