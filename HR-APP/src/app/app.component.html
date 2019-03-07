@@ -84,16 +84,16 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title title">
-                                        <a class=" collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                                             Employees
                                         </a>
                                     </h4>
                                 </div>
                                 <!--/.panel-heading -->
-                                <div id="collapseOne" class="panel-collapse collapse" aria-expanded="true" style="">
+                                <div id="collapseOne" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <!-- nested -->
-                                        <div class="panel-group" id="nested">
+                                        <div class="panel-group">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
                                                     <h4 class="panel-title title">
@@ -163,16 +163,16 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title title">
-                                        <a class=" collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                                             Accounts
                                         </a>
                                     </h4>
                                 </div>
                                 <!--/.panel-heading -->
-                                <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="true" style="">
+                                <div id="collapseTwo" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <!-- nested -->
-                                        <div class="panel-group" id="nested">
+                                        <div class="panel-group">
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
                                                     <h4 class="panel-title title">
@@ -252,7 +252,22 @@
 
                         </div>
 
-
+                        <script>
+                                jQuery(document).ready(function() {
+                                    //jQuery(".panel-heading").click(function(){ jQuery(this).nextAll(".panel-collapse").slideToggle("fast"); });
+                                    
+                                    jQuery(".panel-heading").click(function(){ 
+                                        jQuery('#accordion .panel-heading').not(this).removeClass('isOpen');
+                                        jQuery(this).toggleClass('isOpen');
+                                        jQuery(this).next(".panel-collapse").addClass('thePanel');
+                                        jQuery('#accordion .panel-collapse').not('.thePanel').slideUp("fast"); 
+                                        jQuery(".thePanel").slideToggle("fast").removeClass('thePanel'); 
+                                    });
+                                    
+                                });	
+                                
+                                
+                        </script>
 
                     </div>
                 </div>
