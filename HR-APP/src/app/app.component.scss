@@ -16,6 +16,7 @@ body{
     display: inline-block;
     margin-left: 5px;
 }
+.navbar-brand b{color: $white;}
 .chlid-class a:nth-child(1) {
     color:$green;
   }
@@ -566,7 +567,7 @@ body{
     border-radius: 100%;
     position: absolute; /* Tweak the position property if the element seems to be unfit */
     top: 0px;
-    left: 53px;
+    left: 56px;
     background: linear-gradient(180deg, transparent, black);
     opacity: 0;
     transition: 0.3s ease;
